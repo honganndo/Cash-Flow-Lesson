@@ -1,0 +1,93 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<style>
+@font-face {
+    font-family: "roboto";
+    src: url("/static/fonts/Roboto-Medium.ttf");
+  }
+  @font-face {
+    font-family: "roboto-bold";
+    src: url("/static/fonts/Roboto-Bold.ttf");
+  }
+  @font-face {
+    font-family: "nunito";
+    src: url("/static/fonts/Nunito-Regular.ttf");
+  }
+.home-div {
+    background-image: url('/static/images/home.png'); /* URL to the image file */
+    background-size: cover; /* Cover the entire area */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+
+ }
+ h1{
+     font-family: roboto;
+ }
+
+ p{
+     font-family: nunito;
+ }
+
+ body {
+    background-color: #e4eef7;
+ }
+  
+.learn-box {
+    margin-left: 80px;
+    margin-top: 80px;
+    /* background: white; */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    padding: 40px;
+    color: white;
+}
+.btn-custom {
+    width: 60%;
+    padding: 10px 30px;
+    font-size: 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+    box-shadow: 0px 1px 1px #c5d8ec;
+
+}
+.btn-learn {
+    background-color: #0777ff;
+    color: white;
+    font-family: nunito;
+}
+.btn-learn:hover {
+    background-color: #0056b3;
+    color: white;
+    font-family: nunito;
+}
+.btn-quiz {
+    background-color: #157fff;
+    color: white;
+    font-family: nunito;
+}
+.btn-quiz:hover {
+    background-color: #83bfff;
+    color: white;
+    font-family: nunito;
+}
+</style>
+
+<div class="row home-div">
+
+    <div class="col learn-box text-left">
+        <h1 class="mb-4">Learn Cash Flow </h1>
+            <h1 class="mb-4">in Only 10 minutes</h1>
+        <p class="lead mb-5">Understand the three types of cash flow <br>on a cash flow statement.</p>
+        
+        <!-- Learn Button -->
+        <a href="/lessons" class="btn btn-custom btn-learn m-2">Learn</a>
+        <br>
+        <!-- Quiz Button -->
+        <a href="/startquiz" class="btn btn-custom btn-quiz m-2">Take the Quiz</a>
+    </div>
+    
+    <div class ="col">
+    </div>
+</div>
+{% endblock %}

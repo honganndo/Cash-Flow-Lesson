@@ -1,0 +1,84 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<style>
+    @font-face {
+       font-family: 'roboto';
+       src: url('/static/fonts/Roboto-Medium.ttf');
+    }
+    @font-face {
+       font-family: 'roboto-bold';
+       src: url('/static/fonts/Roboto-Bold.ttf');
+    }
+    @font-face {
+       font-family: 'nunito';
+       src: url('/static/fonts/Nunito-Regular.ttf');
+    }
+    body, html {
+        height: 100%;
+        margin: 0;
+    }
+    .flex-container {
+        display: flex;
+        height: 100%;
+    }
+    .left-column {
+        flex: 0 0 40%; /* 60% width */
+        background-color: #182B49; /* Dark blue color */        
+        padding: 50px;
+        box-sizing: border-box;
+    }
+    .right-column {
+        flex: 0 0 60%; /* 40% width */
+        background-image: url("/static/images/lessons.png");
+        background-size: cover;
+        background-position: center;
+    }
+    .welcome {
+        font-family: roboto-bold;
+        font-size: 50px;
+        text-align: left;
+        margin-left: 40px;
+        margin-bottom: 40px;
+        margin-top: 90px;
+        color: #f7fcff;
+    }
+    .start {
+        font-family: roboto-bold;
+        font-size: 36px;
+        text-align: left;
+        margin-left: 40px;
+        margin-bottom: 40px;
+        color: #9ee0eb;
+    }
+    .lesson-link {
+        font-family: roboto;
+        display: block;
+        margin-bottom: 20px;
+        margin-left: 50px;
+        text-decoration: none;
+        color: #fff;
+        font-family: nunito;
+        font-size: 26px;
+    }
+    .lesson-link:hover {
+        text-decoration: underline;
+    }
+</style>
+
+<div class="flex-container">
+    <div class="left-column">
+        <div class="welcome">Lessons:</div>
+        <div class="lesson-links">
+            <a href="/lesson1" class="lesson-link">1: Introduction</a>
+            <a href="/lesson2" class="lesson-link">2: Cash from Operations</a>
+            <!-- Repeat the pattern for Lesson 3 to Lesson 6 -->
+            <a href="/lesson3" class="lesson-link">3: Cash from Investing</a>
+            <a href="/lesson4" class="lesson-link">4: Cash from Financing</a>
+            <a href="/lesson5" class="lesson-link">5: Cash Flow Statement Example </a>
+            <a href="/lesson6" class="lesson-link">6: Summary</a>
+        </div>
+    </div>
+    <div class="right-column"></div>
+</div>
+{% endblock %}
