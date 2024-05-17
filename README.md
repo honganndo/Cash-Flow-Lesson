@@ -4,6 +4,11 @@
 ![image](https://github.com/honganndo/Cash-Flow-Lesson/assets/45318997/6c5c9049-31e5-48ec-9ba2-6c1089a86186)
 ![image](https://github.com/honganndo/Cash-Flow-Lesson/assets/45318997/33c346a9-c1e3-4fc3-b65c-5af0925d0938)
 
+### Website Run Instructions:
+1. Open Terminal in UI_Design folder.
+2. Run the command `python app.py`
+3. Go to http://localhost:5000/ in your browswer
+
 Video Walkthrough: https://youtu.be/qp_NiKynnFE <br>
 
 Other project contributors for learning portion of website: Bonny Quan and Camerie Mazreku. <br>
