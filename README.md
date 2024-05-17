@@ -4,5 +4,5 @@
 ![image](https://github.com/honganndo/Cash-Flow-Lesson/assets/45318997/6c5c9049-31e5-48ec-9ba2-6c1089a86186)
 ![image](https://github.com/honganndo/Cash-Flow-Lesson/assets/45318997/33c346a9-c1e3-4fc3-b65c-5af0925d0938)
 
-Other project contributors for learning portion of website: Bonny Quan and Camerie Mazreku 
+Other project contributors for learning portion of website: Bonny Quan and Camerie Mazreku. <br>
 I designed and implemented the quiz portion, redesigned some of the learning portion, and cleaned up the code in the learning portion. 
